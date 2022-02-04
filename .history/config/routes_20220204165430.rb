@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root to: 'posts#index'  
+  ろお 'posts/new', to: 'posts#new'
   post 'posts', to: 'posts#create'
 end
