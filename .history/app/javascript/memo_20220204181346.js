@@ -1,5 +1,5 @@
 function post (){
-  const submit = document.getElementById("submit");
+  const submit = document.getElementById("submit"); //リクエストを送信する処理
   submit.addEventListener("click", (e) => {
     e.preventDefault();
     const form = document.getElementById("form");
@@ -9,6 +9,6 @@ function post (){
     XHR.responseType = "json";
     XHR.send(formData);
   });
-};
-
-window.addEventListener('load', post);
+ };
+ 
+ window.addEventListener('load', post);
